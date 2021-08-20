@@ -21,9 +21,8 @@ body {
 
 h1 {
   @extend %Rubik-500;
-  font-size: 58px;
-  color: $title-color;
-  line-height: 68px;
+  font-size: 72px;
+  line-height: 72px;
 }
 h2 {
   @extend %DMSans-700;
@@ -35,10 +34,12 @@ h2 {
   font-size: 26px;
 }
 h4 {
+  @extend %DMSans-700;
   font-size: 18px;
 }
 h5 {
   font-size: 16px;
+  @extend %DMSans-700;
 }
 h6 {
   @extend %Rubik-300;
@@ -51,11 +52,19 @@ p {
 }
 .container {
     width: 100%;
+    max-width: 1800px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.container-fluid {
+    width: 100%;
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 }
-
+.title-block {
+  text-align: center;
+}
 
  
 

@@ -30,6 +30,7 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "swiper": "^6.8.3"
   }
 }
