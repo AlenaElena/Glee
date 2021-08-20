@@ -1,0 +1,66 @@
+html,
+body {
+  height: 100vh;
+}                                       
+body {
+    display: flex;
+    flex-direction: column;
+    text-rendering: optimizeSpeed;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 26px;
+    color: $default-color;
+    margin: 0 auto;
+    @extend %Rubik-500;
+}
+// @extend %DMSans-700;
+// @extend %Rubik-500;
+.main {
+  flex-grow: 1;
+}
+
+h1 {
+  @extend %Rubik-500;
+  font-size: 58px;
+  color: $title-color;
+  line-height: 68px;
+}
+h2 {
+  @extend %DMSans-700;
+  color: #191919;
+  font-size: 36px;
+}
+h2 {
+  @extend %DMSans-700;
+  font-size: 26px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  @extend %Rubik-300;
+  font-size: 36px;
+}
+p {
+  @extend %Rubik-400;
+  font-size: 16px;
+  line-height: 30px;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+ 
+
+
+
+
+
+
