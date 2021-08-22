@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "gulp": "^4.0.2",
+    "magnific-popup": "^1.1.0",
     "swiper": "^6.8.3"
   }
 }

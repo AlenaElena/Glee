@@ -263,9 +263,116 @@
 }
 
 
+.video-block {
+  background-image: url(../images/video-img.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  min-height: 501px;
+  position: relative;
+  &__play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-color: $accent-color;
+    border-radius: 50%;
+    box-shadow: 0 0 0 20px rgba(163, 187, 200, 0.4);
+  }
+}
 
 
 
+
+.footer-content {
+  padding: 65px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(163, 187, 200, 0.4);
+  &__item {
+    max-width: 270px;
+    width: 100%;
+    font-size: 14px;
+    color: #7b7b7b;
+    @extend %Rubik-400;
+  }
+  &__logo {
+    margin-bottom: 25px;
+  }
+  &__text {
+    margin-top: 10px;
+  }
+  &__phone {
+    margin: 15px 0;
+  }
+  &__title {
+    color: #1f2044;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-top: 15px;
+  }
+  &__form {
+    margin-top: 30px;
+  }
+  &__inner {
+    display: flex;
+  }
+  &__input {
+    border: none;
+    background-color: #fef7f0;
+    font-size: 12px;
+    @extend %DMSans-400;
+    padding: 10px 14px 12px;
+    width: 170px;
+    &::placeholder {
+      font-size: 12px;
+      @extend %DMSans-400;
+      color: #234969;      
+    }
+  }
+  &__btn {
+    padding: 11px 15px;
+    border: none;
+  }
+}
+.footer-copy {
+  padding: 30px 0;
+  font-size: 14px;
+    color: #7b7b7b;
+    @extend %Rubik-400;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  // &__text {
+    
+  // }
+  &__links {
+    display: flex;
+  }
+  &__link {
+    padding: 0 12px;
+    line-height: 32px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      right: 0;
+      width: 1px;
+      height: 13px;
+      background-color: #7b7b7b;
+    }
+  }
+  &__link:last-child::after {
+    display: none;
+  }
+}
 
 
 
