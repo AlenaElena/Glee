@@ -24,6 +24,16 @@ new Swiper('.intro-slider', {
 
 });
 
+$(document).ready(function () {
+  $('.video-block__play').magnificPopup({
+    disableOn: 700,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
 
+    fixedContentPos: false
+  });
+});
 
 

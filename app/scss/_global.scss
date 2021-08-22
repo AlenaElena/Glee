@@ -65,8 +65,12 @@ p {
 .title-block {
   text-align: center;
 }
-
- 
+.button {
+  background-color: $accent-color;
+  color: #fff;
+  font-size: 15px;
+  @extend %DMSans-400;
+}
 
 
 
