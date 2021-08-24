@@ -29,15 +29,15 @@ h2 {
   color: #191919;
   font-size: 36px;
 }
-h2 {
+h3 {
   @extend %DMSans-700;
   font-size: 26px;
 }
-h3 {
-  @extend %DMSans-700;
-  font-size: 20px;
-  color: #191919;
-}
+// h3 {
+//   @extend %DMSans-700;
+//   font-size: 20px;
+//   color: #191919;
+// }
 h4 {
   @extend %DMSans-700;
   font-size: 18px;
