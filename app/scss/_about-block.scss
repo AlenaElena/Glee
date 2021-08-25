@@ -87,7 +87,14 @@
   }
   &__item {
     text-align: center;
-  }
+    &:nth-child(2) {
+      .statistics__item-img {
+        img {
+          padding-top: 10px;
+        }
+      }
+    }
+  }  
   &__item-img {
     position: relative;    
     height: 66px;
@@ -95,17 +102,18 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: 0;
-      right: 0;
+      bottom: 10px;
+      right: 35px;
       width: 35px;
       height: 35px;
       border-radius: 50%;
-      background-color: rgba(163, 187, 200, 0.3);
+      background-color: rgba(163, 187, 200, 0.7);
     }
     img {
       margin: 0 auto;
     }
   }
+  
   &__item-indicators {
     color: $default-color;
     span {
@@ -116,4 +124,72 @@
   }
 }
 
+
+.team {
+  padding: 120px 0 110px;
+  &__inner {
+    display: flex;
+  }
+}
+.team-content {
+  max-width: 300px;
+  color: $default-color;
+  margin-right: 100px;
+  &__title {
+    margin-bottom: 30px;
+    color: $default-color;
+  }
+  &__btn {
+    margin-top: 30px;
+    padding: 13px 60px 13px 15px;
+  }
+}
+.team-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 100px 30px;
+  &__card {
+    position: relative;
+  }
+  &__card-content {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    width: 325px;
+    height: 111px;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__card-name {
+    color: #436372;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  &__card-prof {
+    color: #565872;
+  }
+  &__card-social {
+    display: flex;
+  }
+  &__card-socLink {
+    width: 42px;
+    height: 42px;
+    background-color: #f6f6f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.7s;
+    & + .team-box__card-socLink {
+      margin-left: 5px;
+    }
+    &:hover {
+      background-color: #d1caca86;
+    }
+  }
+}
 
