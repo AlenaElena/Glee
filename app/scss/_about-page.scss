@@ -1,3 +1,10 @@
+@import 'vars';
+@import 'fonts';
+@import 'global';
+@import 'reset';
+@import 'libs';
+
+
 .about {
   padding: 110px 0 120px;
   &__inner {
@@ -190,14 +197,5 @@
     &:hover {
       background-color: #d1caca86;
     }
-  }
-}
-
-.articles--about {
-  .title-block {
-    color: $default-color;
-  }
-  .articles-link {
-    color: $default-color;
   }
 }

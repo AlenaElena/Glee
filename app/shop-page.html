@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="container-fluid">
+      <div class="header__inner">
+        <a class="header__logo" href="#">
+          <img src="images/logo.png" alt="logo">
+        </a>
+
+        <nav class="header-menu">
+          <ul class="header-menu__list">
+            <li class="header-menu__item">
+              <a class="header-menu__link" href="home-page.html">
+                Home
+              </a>
+            </li>
+            <li class="header-menu__item">
+              <a class="header-menu__link" href="about-page.html">
+                About
+              </a>
+            </li>
+            <li class="header-menu__item">
+              <a class="header-menu__link" href="conditions-page.html">
+                Services
+              </a>
+            </li>
+            <li class="header-menu__item">
+              <a class="header-menu__link" href="#">
+                Pages
+              </a>
+            </li>
+            <li class="header-menu__item">
+              <a class="header-menu__link" href="blog-page.html">
+                News
+              </a>
+            </li>
+            <li class="header-menu__item">
+              <a class="header-menu__link" href="contact-page.html">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-user">
+          <a class="header-user__link header-user__link--search" href="#">
+            <img src="images/icons/search-dark.png" alt="">
+          </a>
+          <div class="header-user__inner">
+            <a class="header-user__link header-user__link--heard" href="#">
+              <img src="images/icons/heard-dark.png" alt="">
+              <span class="header-user__num">0</span>
+            </a>
+            <a class="header-user__link header-user__link--cart" href="#">
+              <img src="images/icons/cart-dark.png" alt="">
+              <span class="header-user__num">0</span>
+            </a>
+          </div>
+          <button class="header-user__btn">
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="page-top">
+      <div class="container">
+        <h6 class="page-top__title">
+          Shop list 1
+        </h6>
+        <div class="breadcrambs">
+          <ul class="breadcrambs__list">
+            <li class="breadcrambs__list-item">
+              <a class="breadcrambs__list-link" href="home-page.html">
+                Home
+              </a>
+            </li>
+            <li class="breadcrambs__list-item">
+              <a class="breadcrambs__list-link" href="#">
+                Shop
+              </a>
+            </li>
+            <li class="breadcrambs__list-item">
+              <a class="breadcrambs__list-link" href="product-page.html">
+                Product Details
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </section>
+
+    <sectiom class="shop">
+      <div class="container">
+        <div class="shop__inner">
+          <div class="shop-filters filter">
+            <div class="filter-category filter-item">
+              <h4 class=" filter-item__title">
+                CATEGORY
+                <span></span>
+              </h4>
+                  
+              <form action="#" class="filter-category__form">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span class="filter-category__text filter-item__text">Chair</span>
+                    <span class="filter-category__check filter-item__check"></span>
+                  </div>          
+                </label>
+
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span class="filter-category__text filter-item__text">Table</span>
+                    <span class="filter-category__check filter-item__check"></span>
+                  </div>
+                </label>
+
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span class="filter-category__text filter-item__text">Lamp</span>
+                    <span class="filter-category__check filter-item__check"></span>
+                  </div>
+                </label>
+
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span class="filter-category__text filter-item__text">Watch</span>
+                    <span class="filter-category__check filter-item__check"></span>
+                  </div>
+                </label>
+
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span class="filter-category__text filter-item__text">Clock</span>
+                    <span class="filter-category__check filter-item__check"></span>
+                  </div>
+                </label>    
+              </form>
+            </div>
+
+            <div class="filter-price filter-item">
+              <h4 class=" filter-item__title">
+                PRICE
+                <span></span>
+              </h4>
+              <form class="filter-price__form" action="#">
+                <input type="text" class="filter-price__input" data-min="0" data-max="999" data-from="100" data-to="500">
+                <label class="filter-price__label">
+                  <div class="filter-price__num">
+                    <span> 
+                      $<span class="filter-price__from"></span>
+                    </span>
+                    <span>
+                      $<span class="filter-price__to"></span>
+                    </span>
+                  </div>
+                  <button class="filter-price__btn" type="submit">Filter</button>
+                </label>
+              </form>
+            </div>
+
+            <div class="filter-brand filter-item">
+              <h4 class=" filter-item__title">
+                BRAND
+                <span></span>
+              </h4>
+                  
+              <form action="#" class="filter-brand__form">
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span class="filter-brand__text filter-item__text">RFL</span>
+                    <span class="filter-brand__check filter-item__check">(10)</span>
+                  </div>
+                </label>
+              
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span class="filter-brand__text filter-item__text">Brothers</span>
+                    <span class="filter-brand__check filter-item__check">(21)</span>
+                  </div>
+                </label>
+              
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span class="filter-brand__text filter-item__text">Regal</span>
+                    <span class="filter-brand__check filter-item__check">(3)</span>
+                  </div>
+                </label>
+              
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span class="filter-brand__text filter-item__text">Nadia</span>
+                    <span class="filter-brand__check filter-item__check">(14)</span>
+                  </div>
+                </label>
+              
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span class="filter-brand__text filter-item__text">Otobi</span>
+                    <span class="filter-brand__check filter-item__check">(6)</span>
+                  </div>
+                </label>
+              </form>
+            </div>
+
+            <div class="filter-recent filter-item">
+              <h4 class=" filter-item__title">
+                RECENT PRODUCTS
+                <span></span>
+              </h4>
+
+              <div class="filter-recent__item">
+                <div class="filter-recent__img">
+                  <img src="images/products/lamp-1.png" alt="">
+                </div>
+
+                <div class="filter-recent__content">
+                  <div class="filter-recent__title">
+                    Pendant lamp
+                  </div>
+                  <div class="star" data-rateyo-rating="5">
+                  </div>
+                  <div class="filter-recent__price">
+                    23$
+                  </div>
+                </div>
+              </div>
+
+              <div class="filter-recent__item">
+                <div class="filter-recent__img">
+                  <img src="images/products/lamp-2.png" alt="">
+                </div>
+              
+                <div class="filter-recent__content">
+                  <div class="filter-recent__title">
+                    Pendant lamp
+                  </div>
+                  <div class="star" data-rateyo-rating="4">
+                  </div>
+                  <div class="filter-recent__price">
+                    23$
+                  </div>
+                </div>
+              </div>
+
+              <div class="filter-recent__item">
+                <div class="filter-recent__img">
+                  <img src="images/products/lamp-3.png" alt="">
+                </div>
+              
+                <div class="filter-recent__content">
+                  <div class="filter-recent__title">
+                    Pendant lamp
+                  </div>
+                  <div class="star" data-rateyo-rating="3.5">
+                  </div>
+                  <div class="filter-recent__price">
+                    23$
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
+          </div>
+          <div class="shop-content">
+
+          </div>
+        </div>
+      </div>
+    </sectiom>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-content__item">
+          <a class="footer-content__logo" href="#">
+            <img src="images/logo.png" alt="">
+          </a>
+          <a class="footer-content__address" href="#">
+            ADDRESS: 4772 Wines Lane <br>
+            Houston, TX 77032
+          </a>
+          <a class="footer-content__phone" href="#">
+            Telephone: +832-347-5843
+          </a>
+          <a class="footer-content__mail" href="#">
+            Email: contact@Glee.com
+          </a>
+        </div>
+        <div class="footer-content__item">
+          <h5 class="footer-content__title">
+            Services
+          </h5>
+          <ul class="footer-content__list">
+            <li class="footer-content__text">
+              <a class="footer-content__link" href="#">
+                About us
+              </a>
+            </li>
+            <li class="footer-content__text">
+              <a class="footer-content__link" href="#">
+                Return Policy
+              </a>
+            </li>
+            <li class="footer-content__text">
+              <a class="footer-content__link" href="#">
+                Our Blog
+              </a>
+            </li>
+            <li class="footer-content__text">
+              <a class="footer-content__link" href="#">
+                Contact Us
+              </a>
+            </li>
+            <li class="footer-content__text">
+              <a class="footer-content__link" href="#">
+                Terms & Condition
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-content__item">
+          <h5 class="footer-content__title">
+            Account
+          </h5>
+          <ul class="footer-content__list">
+            <li class="footer-content__text">
+              <a class="footer-content__link" href="#">
+                Your Account
+              </a>
+            </li>
+            <li class="footer-content__text">
+              <a class="footer-content__link" href="#">
+                Checkout
+              </a>
+            </li>
+            <li class="footer-content__text">
+              <a class="footer-content__link" href="#">
+                Login
+              </a>
+            </li>
+            <li class="footer-content__text">
+              <a class="footer-content__link" href="#">
+                Register
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-content__item">
+          <h5 class="footer-content__title">
+            newsletter
+          </h5>
+          <div class="footer-content__text">
+            Subscribe by our newsletter and get <br>
+            update protidin.
+          </div>
+          <form action="#" class="footer-content__form">
+            <div class="footer-content__inner">
+              <input class="footer-content__input" type="text" placeholder="Email address">
+              <button class="footer-content__btn" type="submit">
+                Subscribe
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <div class="footer-copy__inner">
+          <div class="footer-copy__text">
+            ©2020 CopyRight Example. All rights reserved.
+          </div>
+          <div class="footer-copy__links">
+            <a class="footer-copy__link" href="#">
+              Home
+            </a>
+            <a class="footer-copy__link" href="#">
+              About
+            </a>
+            <a class="footer-copy__link" href="#">
+              Blog
+            </a>
+            <a class="footer-copy__link" href="#">
+              Contact
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+
+</html>
