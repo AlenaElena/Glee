@@ -3,8 +3,14 @@
 @import 'global';
 @import 'reset';
 @import 'libs';
-@import 'about-block';
-@import 'conditions';
+
+
+@import 'about-page';
+@import 'conditions-page';
+@import 'login-page';
+@import 'contact-page';
+@import 'shop-page';
+
 
 .header {
   padding: 45px 0;
@@ -526,7 +532,15 @@
     }
   }
 }
-
+.articles--about,
+.articles--contacts {
+  .title-block {
+    color: $default-color;
+  }
+  .articles-link {
+    color: $default-color;
+  }
+}
 
 
 

@@ -1,0 +1,208 @@
+@import 'vars';
+@import 'fonts';
+@import 'global';
+@import 'reset';
+@import 'libs';
+
+
+
+.shop {
+  padding: 100px 0 120px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-filters {
+    max-width: 270px;
+    width: 100%;
+  }
+  &-content {
+    width: 100%;
+    max-width: 870px;
+  }
+}
+
+.filter-item {
+  margin-bottom: 50px;
+  &__title {
+    color: $default-color;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    span {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -50px;
+      height: 3px;
+      width: 40px;
+      background-color: #a3bbc8;
+    }
+  }
+}
+
+
+.filter-category {
+  &__label {
+    display: block;
+    cursor: pointer;
+  }
+  &__input {
+    @extend %checkbox-hidden;
+    &:checked {
+      & + .filter-category__checkbox {
+        border-radius: 5px;
+        background-color: rgba(163, 187, 200, 0.4);
+        .filter-category__check  {
+          background-image: url(../images/icons/filter-color-chrckbox-black.svg);
+          width: 8px;
+          height: 8px;
+          top: 18px;
+        }
+      }
+    } 
+  }
+  &__checkbox {
+    padding: 10px 20px 10px 15px;
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    margin-top: 5px;
+  } 
+  &__text {
+    color: $default-color;
+    @extend %Rubik-400;
+  }
+  &__check {
+    width: 5px;
+    height: 10px;
+    right: 20px;
+    top: 13px;
+    background-image: url(../images/icons/filter-arrow-right.png);
+    position: absolute;
+  }
+}
+
+.filter-brand {
+  &__label {
+    display: block;
+    cursor: pointer;
+  }
+  &__input {
+    @extend %checkbox-hidden;
+    &:checked {
+      & + .filter-brand__checkbox {
+        border-radius: 5px;
+        background-color: rgba(163, 187, 200, 0.4);
+        .filter-brand__check  {
+          color: $default-color;
+        }
+      }
+    } 
+  }
+  &__checkbox {
+    padding: 10px 20px 10px 15px;
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    margin-top: 5px;
+  } 
+  &__text {
+    color: $default-color;
+    @extend %Rubik-400;
+  }
+  &__check {
+    color: #b3b3b3;
+    @extend %Rubik-400;
+    right: 20px;
+    top: 13px;
+    position: absolute;
+  }
+}
+
+.filter-price {
+  &__form {
+  .irs--flat  {
+    // height: 30px;
+    .irs-line {
+      top: 15px;
+      height: 3px;
+      background-color: rgba(163, 187, 200, 0.5);
+      border-radius: 0;
+    }
+    .irs-min, 
+    .irs-max,
+    .irs-from, 
+    .irs-to, 
+    .irs-single,
+    .irs-handle>i:first-child {
+      display: none;
+    }
+    .irs-bar {
+      top: 14px;
+      height: 5px;
+      background-color: $accent-color;
+    }
+    .irs-handle {
+      top: 9px;
+      width: 15px;
+      height: 15px;
+      background-color: $accent-color;    
+      }
+    }
+  }
+  &__num {
+    display: flex;
+    justify-content: space-between;
+    @extend %Rubik-400;
+    font-size: 14px;
+    color: $default-color;
+  }
+  &__btn {
+    display: block;
+    border: none;
+    color: #fff;
+    background-color: $accent-color;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 15px;
+    margin: 15px auto;
+    padding: 10px 30px;
+  }
+}
+
+
+.filter-recent {
+  &__item {
+    display: flex;
+    align-items: center;
+    & + .filter-recent__item {
+      margin-top: 25px;
+    }
+  }
+  &__img {
+    border: 2px solid #f2f2f2;
+    background-color: #fefefe;
+    width: 67px;
+    height: 67px;
+    margin-right: 15px;
+    img {
+      height: 61px;
+      object-fit: cover;
+      margin: 0 auto;
+    }
+  }
+  &__title {
+    color: #333333;
+    @extend %Rubik-400;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  &__price {
+    color: #333333;
+    @extend %Rubik-400;
+    font-size: 15px;
+    margin-top: 4px;
+  }
+}
+
