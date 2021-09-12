@@ -6,7 +6,7 @@ const uglify               = require('gulp-uglify');
 const imagemin             = require('gulp-imagemin');
 const rename               = require('gulp-rename');
 const nunjucksRender = require('gulp-nunjucks-render');
-const ghPages = require('gulp-gh-pages');
+
 const del                  = require('del');
 const browserSync          = require('browser-sync').create();
 
@@ -49,6 +49,8 @@ function nunjucks() {
       'node_modules/slick-carousel/slick/slick.js',
       // 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
       'node_modules/rateyo/src/jquery.rateyo.js',
+
+      
       'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
       'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
       'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
@@ -104,6 +106,8 @@ function nunjucks() {
     watch(['app/**/*.html']).on('change', browserSync.reload);
   }
 
+  
+  
   exports.styles = styles;
   exports.scripts = scripts;
   exports.browsersync = browsersync;  
