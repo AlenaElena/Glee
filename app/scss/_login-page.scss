@@ -1,0 +1,107 @@
+.modal {
+  margin: 100px auto 120px;
+  max-width: 470px;
+  width: 100%;
+  &-top {
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  &-top__link {
+    margin: 0 25px;
+    h4 {
+      color: rgba(66, 98, 112, 0.5);
+      font-size: 22px;
+    }
+    &--active {
+      h4 {
+        color: rgba(66, 98, 112, 1);
+      }
+    }
+  }
+  &-form__label {
+    color: #436372;
+    @extend %Rubik-400;
+    font-size: 14px;
+    padding-top: 20px;
+  }
+  &-form__input {
+    border: 2px solid #f6f6f6;
+    width: 100%;
+    height: 56px;
+    padding: 10px 15px;
+    margin: 10px 0;
+  }
+  &-form__btn {
+    width: 100%;
+    background-color: $accent-color;
+    border: none;
+    padding: 17px;
+    color: #fff;
+    font-size: 18px;
+    margin: 15px 0 30px;
+    letter-spacing: 1.5px;
+  }
+  &-form__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #f6f6f6;
+  }
+  &-form__link {
+    color: #436372;
+    @extend %Rubik-400;
+    font-size: 14px;
+    padding-top: 20px;
+  }
+  .jq-checkbox {
+    vertical-align: -2px;
+    width: 14px;
+    height: 14px;
+    margin: 0 10px 0 0;
+    border: none;
+    background: #ebebeb;
+    box-shadow: none;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  &-register__subtitle {
+    margin: 25px 0;
+    text-align: center;
+    color: #436372;
+    @extend %Rubik-400;
+    font-size: 14px;
+  }
+  &-register__link {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    border: 2px solid $accent-color;
+    letter-spacing: 1.5px;
+    transition: all 0.6s;
+    &:hover {
+      color: #fff;
+      background-color: $accent-color;
+    }
+  }
+  &-form__text {
+    margin: 25px 0;
+    color: #436372;
+    @extend %Rubik-400;
+    font-size: 14px;
+  }
+  &-form__button {
+    background-color: #292929;
+    color: #fff;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+}
+

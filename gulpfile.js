@@ -6,6 +6,7 @@ const uglify               = require('gulp-uglify');
 const imagemin             = require('gulp-imagemin');
 const rename               = require('gulp-rename');
 const nunjucksRender = require('gulp-nunjucks-render');
+const ghPages = require('gulp-gh-pages');
 const del                  = require('del');
 const browserSync          = require('browser-sync').create();
 
@@ -51,6 +52,8 @@ function nunjucks() {
       'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
       'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
       'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+ 
+      'node_modules/paginationjs/dist/pagination.js',
       
       'node_modules/swiper/swiper-bundle.js',
       'app/js/main.js'
