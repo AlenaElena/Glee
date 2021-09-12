@@ -85,9 +85,9 @@ p {
     top: 50%;
     transform: translateY(-50%);
     right: 20px;
-    background-image: url(../images/icons/btn-arrow-dark.png);
-    width: 21px;
-    height: 10px;
+    background-image: url(../images/icons/btn-arrow-dark-color.svg);
+    width: 22px;
+    height: 9px;
     transition: all 0.6s;
   }
   &:hover {
@@ -96,7 +96,7 @@ p {
     border-color: transparent;
     transition: all 0.6s;
     &::after {
-      background-image: url(../images/icons/btn-arrow.png);
+      background-image: url(../images/icons/btn-arrow-white-color.svg);
       transition: all 0.6s;
     }
   }
@@ -106,6 +106,7 @@ p {
   color: #fff;
   border-radius: 5px;
   position: relative;
+ 
   &::after {
     content: "";
     position: absolute;
@@ -119,6 +120,17 @@ p {
   }
 }
 
+.sending-form {
+  &::placeholder {
+    @extend %Rubik-400;
+    font-size: 16px;
+    color: #999;
+  }
+  &:focus {
+    outline: none;
+    border:1px solid $accent-color;
+  }
+}
 .product-tabs {
   &__top {
     margin: 20px 0 70px;

@@ -80,23 +80,18 @@
     <section class="page-top">
       <div class="container">
         <h6 class="page-top__title">
-          Blog Details
+          Register
         </h6>
         <div class="breadcrambs">
           <ul class="breadcrambs__list">
             <li class="breadcrambs__list-item">
-              <a class="breadcrambs__list-link" href="home-page.html">
+              <a class="breadcrambs__list-link" href="#">
                 Home
               </a>
             </li>
             <li class="breadcrambs__list-item">
-              <a class="breadcrambs__list-link" href="blog-page.html">
-                Blog
-              </a>
-            </li>
-            <li class="breadcrambs__list-item">
               <a class="breadcrambs__list-link" href="#">
-                Blog details
+                Register
               </a>
             </li>
           </ul>
@@ -104,6 +99,47 @@
       </div>
       
     </section>
+
+    <section class="modal">
+      <div class="container">
+        <div class="modal-top">
+          <a class="modal-top__link modal-top__link--active" href="#">
+            <h4>Register</h4>
+          </a>
+          <a class="modal-top__link" href="login-page.html">
+            <h4>Login</h4>
+          </a>
+        </div>
+
+        <form class="modal-form" action="#">
+          <label class="modal-form__label" for="#" required>
+            Username or email address *
+            <input class="sending-form modal-form__input" type="text">
+          </label>
+          <label class="modal-form__label" for="#" required>
+            Password *
+            <input class="sending-form modal-form__input" type="text">
+          </label>
+          <div class="modal-form__text">
+            A password will be sent to your email address.
+          </div>
+          <div class="modal-form__text">
+            Your personal data will be used to support your experience throughout this website, to manage access to your account,
+            and for other purposes described in our privacy policy.
+          </div>
+          <div class="modal-form__inner">
+            <label class="modal-form__label" for="#" required>
+              <input class="modal__select-style" type="checkbox">
+              Agree with Terms & Conditions
+            </label>
+          </div>
+          <button class="modal-form__button" type="submit">
+            Register
+          </button>
+        </form>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
