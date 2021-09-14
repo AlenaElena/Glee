@@ -4,6 +4,13 @@ $(function(){
     $('.header-menu__list').toggleClass('header-menu__list--active');
   });
 
+
+  $('.footer-content__title-list').on('click', function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass('footer-content__title-list--active');
+  });
+  
+
   $('.product-tabs__top-item').on('click', function (e) {
     e.preventDefault();
 
@@ -28,7 +35,7 @@ new Swiper('.intro-slider', {
     clickable: true,
     renderBullet: function (index, className) {
       return '<span class="' + className + '">' + (index + 1) + "</span>";
-    }
+    },
   },
 });
 
