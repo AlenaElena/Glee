@@ -550,7 +550,6 @@
 }
 
 
-
 .partners {
   background-color: rgba(252, 215, 182, 0.2);
   padding: 250px 0 80px;
@@ -569,7 +568,6 @@
     margin: 0 50px;
   }
 }
-
 
 
 .footer-content {
@@ -602,6 +600,19 @@
     &-list {
       pointer-events: none;
       position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        right: 50%;
+        width: 8px;
+        height: 11px;
+        background-image: url(../images/icons/angle-double-down.svg);
+        display: none;
+      }
+      &--active::before {
+        transform: rotate(180deg);
+      }
     }
   }
   &__list {
@@ -670,10 +681,6 @@
 @import 'media';
 
 
-@media(max-width: 1590px) {
-
-}
-
 @media(max-width: 1490px) {
   .intro-slider {
     &__wrap {
@@ -693,7 +700,9 @@
   }
 }
 
-@media(max-width: 1170px) {
+
+
+@media(max-width: 1180px) {
   .articles {
     height: auto;
     &__inner {
@@ -790,6 +799,15 @@
     }   
   }
 
+  .header-menu--page {
+    .header-menu__list {
+      &--active {
+        transform: translateY(40px);
+        transition: all 0.9s;
+      }
+    }
+  }
+  
 }
 
 @media(max-width: 940px) {
@@ -827,6 +845,14 @@
 }
 
 @media(max-width: 850px) {
+  .header-menu {
+    &__list {
+      &--active {
+        transform: translateY(70px);
+      }
+    }    
+  }
+
   .intro-info {
     flex-wrap: wrap;
     padding-top: 0;
@@ -903,6 +929,7 @@
 
 @media(max-width: 570px) {
   .header {
+    padding: 20px 0;
     &__inner {
       flex-wrap: wrap;
     }
@@ -915,9 +942,17 @@
     margin-left: 0;  
     &__list {
       &--active {
-        transform: translateY(150px);
+        transform: translateY(90px);
       }
     }    
+  }
+
+  .header-menu--page {
+    .header-menu__list {
+      &--active {
+        transform: translateY(60px);
+      }
+    }
   }
 
   .products {
@@ -942,16 +977,7 @@
     &__title-list {
       pointer-events: auto;
       &::before {
-        content: '';
-        position: absolute;
-        top: 20px;
-        right: 50%;
-        width: 8px;
-        height: 11px;
-        background-image: url(../images/icons/angle-double-down.svg);
-      }
-      &--active::before {
-        transform: rotate(180deg);
+        display: block;
       }
     }
     &__list {
@@ -975,6 +1001,13 @@
 }
 
 @media(max-width: 500px) {
+  .header-menu {
+    &__list {
+      &--active {
+        transform: translateY(110px);
+      }
+    } 
+  }
   .intro-slider {
     padding: 50px 0;
   }
@@ -1026,13 +1059,21 @@
     order: 3;
     &__list {
       &--active {
-        transform: translateY(220px);
+        transform: translateY(190px);
       }
     }  
     &__btn {
       margin-top: 30px;
       margin-right: 0;
     }   
+  }
+
+  .header-menu--page{
+    .header-menu__list {
+      &--active {
+        transform: translateY(140px);
+      }
+    }
   }
 
   .lighting-block__item {

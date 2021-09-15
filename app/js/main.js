@@ -96,7 +96,7 @@ const swiperBlog = new Swiper('.blog-page__post-slider', {
 });
 
 $('.popup-youtube').magnificPopup({
-  disableOn: 700,
+  disableOn: 350,
   type: 'iframe',
   iframe: {
     patterns: {
