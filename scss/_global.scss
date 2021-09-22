@@ -28,6 +28,7 @@ h2 {
   @extend %DMSans-700;
   color: #191919;
   font-size: 36px;
+  line-height: 42px
 }
 h3 {
   @extend %DMSans-700;
@@ -137,16 +138,16 @@ p {
     text-align: center;
   }
   &__top-item {
-      margin: 0 15px;
-      transition: all 0.5s;
-      @extend %DMSans-700;
-      color: #8b8b8b;
-    }
-    &__top-item--active {
-      color: #191919;
-    }
-    &__content-item {
-      display: none;
+    margin: 0 15px;
+    transition: all 0.5s;
+    @extend %DMSans-700;
+    color: #8b8b8b;
+  }
+  &__top-item--active {
+    color: #191919;
+  }
+  &__content-item {
+    display: none;
     &.product-tabs__content-item--active {
       display: block;
     }
@@ -156,3 +157,47 @@ p {
 
 
 
+@media(max-width: 750px) {
+  h1 {
+    font-size: 50px;
+    line-height: 52px;
+  }
+}
+
+@media(max-width: 620px) {
+  h1 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 38px
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h6 {
+    font-size: 28px;
+  }
+}
+
+@media(max-width: 500px) {
+  h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .product-tabs {
+    &__top {
+      margin: 20px 0 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__top-item {
+      margin: 10px 0;
+    }
+  }
+}

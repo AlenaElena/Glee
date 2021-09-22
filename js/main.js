@@ -4,6 +4,13 @@ $(function(){
     $('.header-menu__list').toggleClass('header-menu__list--active');
   });
 
+
+  $('.footer-content__title-list').on('click', function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass('footer-content__title-list--active');
+  });
+  
+
   $('.product-tabs__top-item').on('click', function (e) {
     e.preventDefault();
 
@@ -28,7 +35,7 @@ new Swiper('.intro-slider', {
     clickable: true,
     renderBullet: function (index, className) {
       return '<span class="' + className + '">' + (index + 1) + "</span>";
-    }
+    },
   },
 });
 
@@ -62,8 +69,22 @@ const sliderImages = new Swiper('.slider__images .swiper-container', {
 
 const swiperProduct = new Swiper('.products-related__swiper', {
   speed: 1500,
-  slidesPerView: 4,
+  // slidesPerView: 4,
   initialSlide: 1,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    570: {
+      slidesPerView: 2,
+    },
+    850: {
+      slidesPerView: 3,
+    },
+    990: {
+      slidesPerView: 4,
+    }
+  },
   pagination: {
     el: '.products-related__swiper-pagination',
     clickable: true,
@@ -89,7 +110,7 @@ const swiperBlog = new Swiper('.blog-page__post-slider', {
 });
 
 $('.popup-youtube').magnificPopup({
-  disableOn: 700,
+  disableOn: 350,
   type: 'iframe',
   iframe: {
     patterns: {
@@ -154,16 +175,25 @@ $(function () {
     $('.select-style, .product__content-num, .modal__select-style').styler();
   });
 
+
   $('.shop-content__filter-btn').on('click', function () {
     $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active');
     $(this).addClass('shop-content__filter-btn--active');
     
   });
+
+  
+
   $('.button-list').on('click', function () {
-    $('.products__card').addClass('products__card--list')
+    $('.products__card').addClass('products__card--list');
   });
   $('.button-grid').on('click', function () {
-    $('.products__card').removeClass('products__card--list')
+    $('.products__card').removeClass('products__card--list');
+  });
+
+
+  $('.shop-filters__button').on('click', function () {
+    $('.shop-filters').toggleClass('shop-filters--active');
   });
 
 
