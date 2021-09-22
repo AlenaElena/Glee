@@ -69,8 +69,22 @@ const sliderImages = new Swiper('.slider__images .swiper-container', {
 
 const swiperProduct = new Swiper('.products-related__swiper', {
   speed: 1500,
-  slidesPerView: 4,
+  // slidesPerView: 4,
   initialSlide: 1,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    570: {
+      slidesPerView: 2,
+    },
+    850: {
+      slidesPerView: 3,
+    },
+    990: {
+      slidesPerView: 4,
+    }
+  },
   pagination: {
     el: '.products-related__swiper-pagination',
     clickable: true,
@@ -161,16 +175,25 @@ $(function () {
     $('.select-style, .product__content-num, .modal__select-style').styler();
   });
 
+
   $('.shop-content__filter-btn').on('click', function () {
     $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active');
     $(this).addClass('shop-content__filter-btn--active');
     
   });
+
+  
+
   $('.button-list').on('click', function () {
-    $('.products__card').addClass('products__card--list')
+    $('.products__card').addClass('products__card--list');
   });
   $('.button-grid').on('click', function () {
-    $('.products__card').removeClass('products__card--list')
+    $('.products__card').removeClass('products__card--list');
+  });
+
+
+  $('.shop-filters__button').on('click', function () {
+    $('.shop-filters').toggleClass('shop-filters--active');
   });
 
 
